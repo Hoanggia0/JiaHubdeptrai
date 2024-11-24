@@ -1,12 +1,9 @@
-if game.PlaceId == 2753915549 then
-    World1 = true
-elseif game.PlaceId == 4442272183 then
-    World2 = true
-elseif game.PlaceId == 7449423635 then
-    World3 = true
-else
-    game:GetService("Players").LocalPlayer:Kick("Do not Support, Please wait...")
+if not game:IsLoaded() then
+	game.Loaded:Wait()
 end
+local fask = task
+    
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 function CheckQuest() 
     MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
